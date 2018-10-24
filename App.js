@@ -1,21 +1,24 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Even differenter text</Text>
-      </View>
-    );
-  }
-}
+export default () => (
+  <View style={ styles.container }>
+    <Text style={ styles.header }>Login For Photos</Text>
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {
+    display: 'flex',
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
+    padding: 50,
+  },
+  header: {
+    fontSize: 60,
+    textAlign: 'center',
+    flexGrow: 1,
   },
 });
