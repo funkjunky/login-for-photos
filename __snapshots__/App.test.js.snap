@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login component testing renders two text inputs (username and password) 1`] = `
+<View
+  style={
+    Object {
+      "flexGrow": 2,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "fontSize": 50,
+        "textAlign": "center",
+      }
+    }
+  >
+    Login
+  </Text>
+  <TextInput
+    allowFontScaling={true}
+    placeholder="Username"
+    style={
+      Object {
+        "fontSize": 40,
+        "minWidth": 185,
+      }
+    }
+    textContentType="username"
+  />
+  <TextInput
+    allowFontScaling={true}
+    placeholder="Password"
+    secureTextEntry={true}
+    style={
+      Object {
+        "fontSize": 40,
+        "minWidth": 185,
+      }
+    }
+    textContentType="password"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#ffbcbc",
+          "borderColor": "red",
+          "borderWidth": 1,
+          "height": 100,
+          "justifyContent": "center",
+          "margin": 10,
+          "width": 300,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "color": "#333333",
+          "margin": 20,
+        }
+      }
+    >
+      TouchableNativeFeedback is not supported on this platform!
+    </Text>
+  </View>
+</View>
+`;

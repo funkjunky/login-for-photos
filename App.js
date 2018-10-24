@@ -1,9 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import Login from './Login';
+
 export default () => (
   <View style={ styles.container }>
     <Text style={ styles.header }>Login For Photos</Text>
+    <Login />
   </View>
 );
 
