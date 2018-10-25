@@ -8,7 +8,7 @@ import { login } from '../features/Login/api';
 const loginFlow = navigation => async (username, password) => {
   try {
     const user = await login(username, password);
-    AsyncStorage.setItem('currentUser', user[0]);
+    const res = await AsyncStorage.setItem('currentUser', JSON.stringify(user[0]));
 
     navigation.navigate('PhotosScreen');
   } catch (e) {
