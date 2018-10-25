@@ -12,7 +12,7 @@ const loginFlow = navigation => async (username, password) => {
 
     navigation.navigate('PhotosScreen');
   } catch (e) {
-    console.log('error: ', e.message, e);
+    console.log('error logging in: ', e.message);
   }
 };
 
