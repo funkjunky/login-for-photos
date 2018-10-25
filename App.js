@@ -1,27 +1,14 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { createStackNavigator } from 'react-navigation';
 
-import Login from './Login';
+import PhotosScreen from './screens/PhotosScreen';
+import HomeScreen from './screens/HomeScreen';
 
-export default () => (
-  <View style={ styles.container }>
-    <Text style={ styles.header }>Login For Photos</Text>
-    <Login />
-  </View>
+export default createStackNavigator(
+  {
+    HomeScreen,
+    PhotosScreen,
+  }, {
+    initialRouteScreen: 'HomeScreen',
+  }
 );
-
-const styles = StyleSheet.create({
-  container: {
-    display: 'flex',
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'space-around',
-    padding: 50,
-  },
-  header: {
-    fontSize: 60,
-    textAlign: 'center',
-    flexGrow: 1,
-  },
-});

@@ -1,14 +1,21 @@
 module.exports = {
   "extends": "airbnb",
+  "parser": "babel-eslint",
   "env": {
     "node": true, // this is the best starting point
     "browser": true, // for react web
     "es6": true, // enables es7 features
     "jest": true, // enabled described, etc.
   },
+  "parserOptions": {
+    "ecmaVersion": 9,
+  },
   "rules": {
     "react/jsx-filename-extension": 0,
     "react/jsx-curly-spacing": [1, "always"],
+    "react/prop-types": 0,
+    "import/prefer-default-export": 0,
+    "implicit-arrow-linebreak": 0,
     "object-curly-newline": 0,
     "brace-style": 2,
     "camelcase": 2,
